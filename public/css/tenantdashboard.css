@@ -1,0 +1,108 @@
+/* ---------------------------
+   General Dashboard Styles
+--------------------------- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------------------------
+   Sidebar Styles
+--------------------------- */
+#dashboardWrapper nav {
+    background-color: #0d6efd; /* Primary blue */
+    transition: all 0.3s ease;
+}
+
+#dashboardWrapper nav h4 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#dashboardWrapper nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+#dashboardWrapper nav .nav-link:hover {
+    background-color: #198754; /* green hover */
+    color: #fff;
+}
+
+#dashboardWrapper nav .nav-link.active {
+    background-color: #198754; /* active green */
+    color: #fff ;
+    font-weight: 600;
+}
+
+#dashboardWrapper nav .btn-danger {
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+/* ---------------------------
+   Main Content Styles
+--------------------------- */
+#dashboardWrapper main {
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* ---------------------------
+   Cards Styles
+--------------------------- */
+.card {
+    border-radius: 0.75rem;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+.card.text-white.bg-info {
+    background-color: #0dcaf0 ;
+}
+
+.card.text-white.bg-warning {
+    background-color: #ffc107 ;
+    color: #212529 ;
+}
+
+.card.text-white.bg-secondary {
+    background-color: #6c757d;
+}
+
+.card.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* ---------------------------
+   Tables Styles
+--------------------------- */
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: #e9ecef;
+    font-weight: 600;
+}
+
+/* ---------------------------
+   Responsive Adjustments
+--------------------------- */
+@media (max-width: 768px) {
+    #dashboardWrapper nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #dashboardWrapper main {
+        margin-left: 0 ;
+    }
+}
